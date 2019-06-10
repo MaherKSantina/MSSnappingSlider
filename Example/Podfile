@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MSSnappingSlider_Example' do
+  pod 'MSSnappingSlider', :path => '../'
+
+  target 'MSSnappingSlider_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
