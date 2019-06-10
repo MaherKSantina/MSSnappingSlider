@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import MSSnappingSlider
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var mySlider: MSSnappingSlider!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+//        mySlider.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,5 +23,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
+
+extension ViewController: MSSnappingSliderDelegate {
+    func snappingSlider(_ snappingSlider: MSSnappingSlider, didChangeValueTo newValue: Float) {
+        print(newValue)
+    }
 }
 

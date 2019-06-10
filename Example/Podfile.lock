@@ -1,0 +1,16 @@
+PODS:
+  - MSSnappingSlider (0.1.0)
+
+DEPENDENCIES:
+  - MSSnappingSlider (from `../`)
+
+EXTERNAL SOURCES:
+  MSSnappingSlider:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MSSnappingSlider: 015dcaa712dcd893cbe8eadd0ddc9d23deb10606
+
+PODFILE CHECKSUM: 6093b1b896405af454bb63c4a96b797ab6813e4f
+
+COCOAPODS: 1.6.0
