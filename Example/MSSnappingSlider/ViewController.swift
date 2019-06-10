@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        mySlider.delegate = self
+        mySlider.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
