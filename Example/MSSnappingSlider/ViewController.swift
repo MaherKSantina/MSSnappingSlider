@@ -12,6 +12,7 @@ import MSSnappingSlider
 class ViewController: UIViewController {
     
     @IBOutlet weak var mySlider: MSSnappingSlider!
+    @IBOutlet weak var valueLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,7 @@ class ViewController: UIViewController {
 
 extension ViewController: MSSnappingSliderDelegate {
     func snappingSlider(_ snappingSlider: MSSnappingSlider, didChangeValueTo newValue: Float) {
-        print(newValue)
+        valueLabel.text = "\(newValue)"
     }
 }
 

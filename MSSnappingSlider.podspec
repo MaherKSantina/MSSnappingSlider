@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MSSnappingSlider'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MSSnappingSlider.'
+  s.summary          = 'Subclass of UISlider which snaps to specific values based on the step value provided.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+MSSnappingSlider is a subclass of `UISlider` that will give you access to 2 attributes, `step` and `threshold` where you can define exactly how the snapping should work.
                        DESC
 
   s.homepage         = 'https://github.com/MaherKSantina/MSSnappingSlider'

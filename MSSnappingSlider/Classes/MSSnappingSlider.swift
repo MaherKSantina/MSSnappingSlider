@@ -7,11 +7,22 @@
 
 import UIKit
 
+/**
+ Handles all events emitted from the snapping slider
+ */
 public protocol MSSnappingSliderDelegate: AnyObject {
+    
+    /**
+     Will be called whenever the slider snaps to a value, or the user lifts their hand from the slider. Note: This delegate function will sometimes be called multiple times for the same value. This happens when users drag to a new value and lift their finger up.
+     - parameter snappingSlider: The slider that its value changed
+     - parameter newValue: The new snapped value that the slider reached
+     */
     func snappingSlider(_ snappingSlider: MSSnappingSlider, didChangeValueTo newValue: Float)
 }
 
 public extension MSSnappingSliderDelegate {
+    
+    // Default implementation for the change value event
     func snappingSlider(_ snappingSlider: MSSnappingSlider, didChangeValueTo newValue: Float) {}
 }
 

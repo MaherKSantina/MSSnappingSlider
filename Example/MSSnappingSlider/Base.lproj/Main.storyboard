@@ -24,17 +24,44 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="inF-p3-ckS" customClass="MSSnappingSlider" customModule="MSSnappingSlider">
                                 <rect key="frame" x="14" y="88" width="347" height="31"/>
                             </slider>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="T9j-ZA-FDr">
+                                <rect key="frame" x="16" y="142" width="343" height="77.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWf-08-9r8">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Threshold: 0.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvj-rI-a6n">
+                                        <rect key="frame" x="0.0" y="28.5" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qov-br-5vT">
+                                        <rect key="frame" x="0.0" y="57" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="inF-p3-ckS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="5ee-R6-mBf"/>
+                            <constraint firstItem="T9j-ZA-FDr" firstAttribute="top" secondItem="inF-p3-ckS" secondAttribute="bottom" constant="24" id="TH1-E7-L3K"/>
+                            <constraint firstAttribute="trailing" secondItem="T9j-ZA-FDr" secondAttribute="trailing" constant="16" id="p2C-oY-iWk"/>
                             <constraint firstItem="inF-p3-ckS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="rgX-8i-C3E"/>
+                            <constraint firstItem="T9j-ZA-FDr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="uFP-s8-AUN"/>
                             <constraint firstAttribute="trailing" secondItem="inF-p3-ckS" secondAttribute="trailing" constant="16" id="xaN-vu-tQu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Snapping Slider" id="Gj6-50-foy"/>
                     <connections>
                         <outlet property="mySlider" destination="inF-p3-ckS" id="LKi-7S-BgA"/>
+                        <outlet property="valueLabel" destination="Qov-br-5vT" id="GEY-jP-yaj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

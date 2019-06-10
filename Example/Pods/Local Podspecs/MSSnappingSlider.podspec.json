@@ -1,8 +1,8 @@
 {
   "name": "MSSnappingSlider",
   "version": "0.1.0",
-  "summary": "A short description of MSSnappingSlider.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Subclass of UISlider which snaps to specific values based on the step value provided.",
+  "description": "MSSnappingSlider is a subclass of `UISlider` that will give you access to 2 attributes, `step` and `threshold` where you can define exactly how the snapping should work.",
   "homepage": "https://github.com/MaherKSantina/MSSnappingSlider",
   "license": {
     "type": "MIT",
